@@ -1,4 +1,4 @@
-
+![](0-simple_web_stack.png)
 ## Specifics about this infrastructure:
 
 # What is a server
