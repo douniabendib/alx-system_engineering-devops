@@ -6,6 +6,6 @@ Host *
     PasswordAuthentication no
     HashKnownHosts yes
     SendEnv LANG LC_*
-    GSSAIPAuthentication yes
+    GSSAPIAuthentication yes
     GSSAPIDelegateCredentials no
 
