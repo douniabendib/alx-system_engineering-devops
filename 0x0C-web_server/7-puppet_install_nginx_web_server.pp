@@ -1,4 +1,5 @@
 #installing ngix
+
 package { 'nginx':
   ensure => 'installed'
 }

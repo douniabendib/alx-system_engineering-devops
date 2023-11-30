@@ -1,29 +1,8 @@
 #!/usr/bin/env bash
-# install_nginx_web_server
-
-# Update the package list
-sudo apt-get update
-
-# Install Nginx
-sudo apt-get install -y nginx
-
-# Ensure Nginx is configured to listen on port 80
-sudo sed -i 's/listen 80 default_server;/listen 80;/g' /etc/nginx/sites-available/default
-
-# Restart Nginx without using systemctl
-sudo service nginx stop
-sudo service nginx start
-
-# Create a simple HTML file with the content "Hello World!"
-echo "Hello World!" | sudo tee /var/www/html/index.html
-
-# Verify Nginx configuration by querying with curl
-nginx_check=$(curl -s http://localhost | grep "Hello World!")
-
-# Check if the response contains "Hello World!"
-if [ -n "$nginx_check" ]; then
-	echo "Nginx installed and configured successfully!"
-    else
-	echo "Nginx configuration may not be correct. Please check manually."
-fi
-
+# install nginx and adjust default homepage
+apt-get -y update
+apt-get -y install nginx
+sed -i "21s/^listen .*/listen 80" /etc/nginx/sites-enabled/defult
+ufw allow 'Nginx HTTP'
+echo Holberton School > /var/www/html/index.nginx-debian.html
+service nginx start
