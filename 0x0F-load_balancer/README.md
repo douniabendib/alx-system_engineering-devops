@@ -1,0 +1,1 @@
+A load balancer is a device or software application that efficiently distributes incoming network traffic or workload across multiple servers. The primary purpose of a load balancer is to ensure that no single server becomes overwhelmed with too much traffic or load, thus preventing performance degradation or potential downtime.
