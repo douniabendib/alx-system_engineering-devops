@@ -2,12 +2,12 @@
 """
 Queries the Reddit API and returns the number of subscribers
 """
-import request
+import requests
 
 
 def number_of_subscribers(subreddit):
     """fct that return subreddit or 0 if invalid""" 
-    url = f"https://www.reddit.com/r/{}/about.json"
+    url = f"https://www.reddit.com/r/{subreddit}/about.json"
 
     # Get user agent
     # Reference: https://stackoverflow.com/questions/10606133/
