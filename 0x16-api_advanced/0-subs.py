@@ -6,7 +6,10 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    """fct that return subreddit or 0 if invalid""" 
+    """
+    Return the number of subscribers for a given subreddit.
+    Return 0 if an invalid subreddit is given.
+    """
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
 
     # Get user agent
@@ -15,8 +18,8 @@ def number_of_subscribers(subreddit):
     headers = requests.utils.default_headers()
     headers.update({'User-Agent': 'My User Agent 1.0'})
     
-    resp = requests.get(url, headers=headers).json()
-    subscribers = resp.get('data', {}).get('subscribers')
+    response = requests.get(url, headers=headers).json()
+    subscribers = response.get('data', {}).get('subscribers')
     if not subscribers:
         return 0
     return subscribers
