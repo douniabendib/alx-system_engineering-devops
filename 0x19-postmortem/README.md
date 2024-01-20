@@ -1,4 +1,4 @@
-<center>Postmortem: Database Connectivity Issue </center>
+<strong>Postmortem: Database Connectivity Issue </strong>
 
 <h1>Issue Summary:</h1>
 Duration: January 15, 2024, 02:00 PM to January 15, 2024, 04:30 PM (UTC)
