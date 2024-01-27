@@ -8,4 +8,4 @@ On the other hand, an application server is a more comprehensive and feature-ric
 
 In addition to handling HTTP requests like a web server, an application server also provides various services and functionalities required by web applications, such as database access, security, session management, transaction management, clustering, and load balancing. It acts as an intermediary between the client and the backend systems and facilitates the execution of complex application logic.
 
-Examples of popular application servers include Apache Tomcat, JBoss/WildFly, IBM WebSphere, and Oracle WebLogic. These servers are widely used for hosting enterprise-level web applications and provide a robust and scalable platform for running dynamic web app.
+Examples of popular application servers include Apache Tomcat, JBoss/WildFly, IBM WebSphere, and Oracle WebLogic. These servers are widely used for hosting enterprise-level web applications and provide a robust and scalable platform for running dynamic web application.
